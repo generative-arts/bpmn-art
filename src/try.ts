@@ -3,7 +3,7 @@ import path from 'path'
 import { BpmnController } from './controller/bpmn.controller'
 import { InputController } from './controller/input.controller'
 import { BPMN } from './enum/bpmn.enum'
-import canvas, {
+import {
   Config,
   MathController,
   CanvasController,
@@ -27,16 +27,16 @@ async function run() {
     height: 1000,
     colors: ['#E41749', '#F5587B', '#FF8A5C', '#FFF591'],
   }
-  config = canvas.CanvasController.init(config)
+  config = CanvasController.init(config)
 
   if (parallelGateway === 0) {
-    config = canvas.BackgroundController.fill(config, 'white')
+    config = BackgroundController.fill(config, 'white')
   } else {
-    config = canvas.BackgroundController.fill(config, 'black')
+    config = BackgroundController.fill(config, 'black')
   }
 
   for (let i = 0; i < tasks; i += 0.5) {
-    canvas.RectangleController.rectangle(config, {
+    RectangleController.rectangle(config, {
       start: { x: i * 2, y: i * MathController.random(0, tasks) },
       end: { x: 100, y: 100 },
       fillColor:
