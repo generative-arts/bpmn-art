@@ -35,9 +35,12 @@ async function run() {
     config = BackgroundController.fill(config, 'black')
   }
 
-  for (let i = 0; i < tasks; i += 0.5) {
+  for (let i = 0; i < tasks * 100; i += 1) {
     RectangleController.rectangle(config, {
-      start: { x: i * 2, y: i * MathController.random(0, tasks) },
+      start: {
+        x: MathController.random(0, 1000),
+        y: MathController.random(0, 1000),
+      },
       end: { x: 100, y: 100 },
       fillColor:
         config.colors[MathController.random(0, config.colors.length - 1)],
