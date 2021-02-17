@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "BPMN Art",
   "keywords": [
-    "screenshot",
-    "website",
-    "automated"
+    "generative-art",
+    "camunda",
+    "zeebe"
   ],
   "repository": {
     "type": "git",
