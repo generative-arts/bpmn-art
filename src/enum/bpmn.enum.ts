@@ -15,6 +15,8 @@ export enum BPMN {
   INTERMEDIATE_CATCH_EVENT = 'bpmn:intermediateCatchEvent',
   SERVICE_TASK = 'bpmn:serviceTask',
   TASK = 'bpmn:task',
+  USER_TASK = 'bpmn:userTask',
+  MANUAL_TASK = 'bpmn:manualTask',
   EXCLUSIVE_GATEWAY = 'bpmn:exclusiveGateway',
   PARALLEL_GATEWAY = 'bpmn:parallelGateway',
 }
