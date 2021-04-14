@@ -1,6 +1,6 @@
 {
   "name": "@generative-arts/bpmn-art",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "BPMN Art",
   "keywords": [
     "generative-art",
@@ -61,8 +61,8 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "jest": "^26.1.0",
     "husky": "^4.2.5",
+    "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
     "node-mocks-http": "^1.8.1",
     "nyc": "^15.1.0",
