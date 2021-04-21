@@ -19,4 +19,5 @@ export enum BPMN {
   MANUAL_TASK = 'bpmn:manualTask',
   EXCLUSIVE_GATEWAY = 'bpmn:exclusiveGateway',
   PARALLEL_GATEWAY = 'bpmn:parallelGateway',
+  COMPLEX_GATEWAY = 'bpmn:complexGateway',
 }
